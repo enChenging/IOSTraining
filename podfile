@@ -1,0 +1,6 @@
+platform :ios, '9.0'
+target 'IosTraining' do
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'SSZipArchive'
+end

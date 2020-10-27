@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8">
+<root>
+    <totalcount>3423</totalcount>
+    <count>3</count>
+    <user_list>
+        <user>
+            <uid>1</uid>
+            <name>小明</uesrname>
+            <age>18</age>
+            <sex>男</sex>
+        </user>
+        <user>
+           <uid>2</uid>
+           <name>小王</uesrname>
+           <age>16</age>
+           <sex>男</sex>
+        </user>
+        <user>
+           <uid>3</uid>
+           <name>小涨</uesrname>
+           <age>19</age>
+           <sex>男</sex>
+        </user>
+    </user_list>
+</root>

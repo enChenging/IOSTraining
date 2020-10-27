@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cm0-gT-yiO" customClass="FlagView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaG-L7-uN3">
+                    <rect key="frame" x="0.0" y="0.0" width="180" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="XI6-Dh-SKK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v7K-Of-v51">
+                    <rect key="frame" x="180" y="0.0" width="234" height="100"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="58a-Ha-3AJ" firstAttribute="trailing" secondItem="v7K-Of-v51" secondAttribute="trailing" id="7Rb-xy-eqy"/>
+                <constraint firstItem="CaG-L7-uN3" firstAttribute="leading" secondItem="58a-Ha-3AJ" secondAttribute="leading" id="Tou-LB-cwx"/>
+                <constraint firstItem="v7K-Of-v51" firstAttribute="leading" secondItem="CaG-L7-uN3" secondAttribute="trailing" id="gEC-UQ-qOu"/>
+                <constraint firstItem="58a-Ha-3AJ" firstAttribute="bottom" secondItem="CaG-L7-uN3" secondAttribute="bottom" id="he8-gV-ldM"/>
+                <constraint firstItem="CaG-L7-uN3" firstAttribute="top" secondItem="58a-Ha-3AJ" secondAttribute="top" id="hmg-KK-War"/>
+                <constraint firstItem="v7K-Of-v51" firstAttribute="top" secondItem="58a-Ha-3AJ" secondAttribute="top" id="mNP-lX-yrz"/>
+                <constraint firstItem="58a-Ha-3AJ" firstAttribute="bottom" secondItem="v7K-Of-v51" secondAttribute="bottom" id="uXY-Rg-ajI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="58a-Ha-3AJ"/>
+            <connections>
+                <outlet property="iconImage" destination="v7K-Of-v51" id="ZPk-q8-LCZ"/>
+                <outlet property="name" destination="CaG-L7-uN3" id="vmt-Hl-dMn"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="-104.34782608695653"/>
+        </view>
+    </objects>
+</document>

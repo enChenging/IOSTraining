@@ -54,7 +54,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>Security</key>
-	<string></string>
 </dict>
 </plist>

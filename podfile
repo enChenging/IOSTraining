@@ -1,6 +1,7 @@
 platform :ios, '9.0'
 target 'IosTraining' do
-pod 'AFNetworking'
-pod 'SDWebImage'
-pod 'SSZipArchive'
+pod 'AFNetworking', '~> 4.0.1'
+pod 'SDWebImage', '~> 5.9.4'
+pod 'SSZipArchive', '~> 2.2.3'
+pod 'TZImagePickerController', '~> 3.5.4'
 end

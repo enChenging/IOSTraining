@@ -20,6 +20,8 @@
 #import "YCHomeTVC.h"
 #import "YCNeteaseNews2.h"
 #import "YCCoustomCollectionVC.h"
+#import "YCSinglePictureVC.h"
+#import "YCMultiplePictureVC.h"
 
 
 @interface DemosViewController ()
@@ -118,6 +120,12 @@ typedef void (^CaseBlock)(void);
         },
         @"自定义流水布局":^(){
             [self pushVC:[[YCCoustomCollectionVC alloc]init] withTitile:title];
+        },
+        @"相片的选择-单张":^(){
+            [self pushVC:[[YCSinglePictureVC alloc]init] withTitile:title];
+        },
+        @"相片的选择-多张":^(){
+            [self pushVC:[[YCMultiplePictureVC alloc]init] withTitile:title];
         },
     };
     

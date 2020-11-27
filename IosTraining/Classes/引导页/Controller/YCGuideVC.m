@@ -29,6 +29,10 @@
 @implementation YCGuideVC
 
 static NSString * const reuseIdentifier = @"Cell";
+// 只会调用一次
+//+ (void)load{
+//
+//}
 - (instancetype)init
 {
     self = [super init];

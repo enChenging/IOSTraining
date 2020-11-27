@@ -203,6 +203,10 @@
 		087A95372382736D0070CBAD /* VCAFNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 087A95362382736D0070CBAD /* VCAFNetwork.m */; };
 		087A953A23828A120070CBAD /* VCMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 087A953923828A120070CBAD /* VCMusicPlayer.m */; };
 		087A953D23828B670070CBAD /* VCVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 087A953C23828B670070CBAD /* VCVideoPlayer.m */; };
+		087E9FEF256FAD050027DE8B /* YCSinglePictureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E9FEE256FAD050027DE8B /* YCSinglePictureVC.m */; };
+		087E9FF1256FAD5D0027DE8B /* YCSinglePictureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 087E9FF0256FAD5D0027DE8B /* YCSinglePictureVC.xib */; };
+		087E9FF5256FB2870027DE8B /* YCMultiplePictureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E9FF3256FB2870027DE8B /* YCMultiplePictureVC.m */; };
+		087E9FF6256FB2870027DE8B /* YCMultiplePictureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 087E9FF4256FB2870027DE8B /* YCMultiplePictureVC.xib */; };
 		087EC5372500D34400C841F9 /* YCDrawingBoardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 087EC5352500D34400C841F9 /* YCDrawingBoardVC.m */; };
 		087EC5382500D34400C841F9 /* YCDrawingBoardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 087EC5362500D34400C841F9 /* YCDrawingBoardVC.xib */; };
 		087EC53B2500D91900C841F9 /* YCDrawingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 087EC53A2500D91900C841F9 /* YCDrawingBoardView.m */; };
@@ -703,6 +707,12 @@
 		087A953923828A120070CBAD /* VCMusicPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCMusicPlayer.m; sourceTree = "<group>"; };
 		087A953B23828B670070CBAD /* VCVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCVideoPlayer.h; sourceTree = "<group>"; };
 		087A953C23828B670070CBAD /* VCVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCVideoPlayer.m; sourceTree = "<group>"; };
+		087E9FED256FAD050027DE8B /* YCSinglePictureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCSinglePictureVC.h; sourceTree = "<group>"; };
+		087E9FEE256FAD050027DE8B /* YCSinglePictureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCSinglePictureVC.m; sourceTree = "<group>"; };
+		087E9FF0256FAD5D0027DE8B /* YCSinglePictureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YCSinglePictureVC.xib; sourceTree = "<group>"; };
+		087E9FF2256FB2870027DE8B /* YCMultiplePictureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCMultiplePictureVC.h; sourceTree = "<group>"; };
+		087E9FF3256FB2870027DE8B /* YCMultiplePictureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCMultiplePictureVC.m; sourceTree = "<group>"; };
+		087E9FF4256FB2870027DE8B /* YCMultiplePictureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YCMultiplePictureVC.xib; sourceTree = "<group>"; };
 		087EC5342500D34400C841F9 /* YCDrawingBoardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDrawingBoardVC.h; sourceTree = "<group>"; };
 		087EC5352500D34400C841F9 /* YCDrawingBoardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDrawingBoardVC.m; sourceTree = "<group>"; };
 		087EC5362500D34400C841F9 /* YCDrawingBoardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YCDrawingBoardVC.xib; sourceTree = "<group>"; };
@@ -1118,6 +1128,7 @@
 				08F7661E25418D45004CBE13 /* 父子控制器 */,
 				084CD4222542DAE000100580 /* 网易新闻 */,
 				084513AF2547B80C00B5DAE4 /* 自定义流水布局 */,
+				087E9FEC256FACC20027DE8B /* 相片的选择 */,
 			);
 			path = "基础demo";
 			sourceTree = "<group>";
@@ -1404,6 +1415,19 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		087E9FEC256FACC20027DE8B /* 相片的选择 */ = {
+			isa = PBXGroup;
+			children = (
+				087E9FED256FAD050027DE8B /* YCSinglePictureVC.h */,
+				087E9FEE256FAD050027DE8B /* YCSinglePictureVC.m */,
+				087E9FF0256FAD5D0027DE8B /* YCSinglePictureVC.xib */,
+				087E9FF2256FB2870027DE8B /* YCMultiplePictureVC.h */,
+				087E9FF3256FB2870027DE8B /* YCMultiplePictureVC.m */,
+				087E9FF4256FB2870027DE8B /* YCMultiplePictureVC.xib */,
+			);
+			path = "相片的选择";
 			sourceTree = "<group>";
 		};
 		0881ABED24E4D28800133B59 /* FlagTextF */ = {
@@ -2189,6 +2213,7 @@
 				08D801702373B8C2000DB41F /* Sources */,
 				08D801712373B8C2000DB41F /* Frameworks */,
 				08D801722373B8C2000DB41F /* Resources */,
+				2758388E12F9E08A195AF1E9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2288,6 +2313,7 @@
 				0881AC1924E4DE3E00133B59 /* UIPickView.xib in Resources */,
 				08300AAE250B6CAA004485CC /* YCCALayerVC.xib in Resources */,
 				0831627D25148403004736FA /* YCFindVC.storyboard in Resources */,
+				087E9FF1256FAD5D0027DE8B /* YCSinglePictureVC.xib in Resources */,
 				082382BE24FE4CC800BB89A1 /* YCGraphicsContextVC.xib in Resources */,
 				082382A624FE3C0400BB89A1 /* YCProgressVC.xib in Resources */,
 				083A71C324FCDF1500948152 /* YCHitTestVC.xib in Resources */,
@@ -2305,6 +2331,7 @@
 				0881AC0A24E4D2A600133B59 /* zhongguo.jpg in Resources */,
 				08E9383A2535581300C207C3 /* YCDownloadFileSessionVC.xib in Resources */,
 				084DFA48251B26D600FB96C4 /* VCNSThread.xib in Resources */,
+				087E9FF6256FB2870027DE8B /* YCMultiplePictureVC.xib in Resources */,
 				084C4B0B24D7E88C001CA726 /* Info.plist in Resources */,
 				084DFA4E251B43CB00FB96C4 /* YCgcdVC.xib in Resources */,
 				08B18C9824DBDA7700E7336E /* YCCellsb.storyboard in Resources */,
@@ -2337,6 +2364,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2758388E12F9E08A195AF1E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IosTraining/Pods-IosTraining-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IosTraining/Pods-IosTraining-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IosTraining/Pods-IosTraining-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		592A03A4A251E8550253DC96 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2437,6 +2481,7 @@
 				085CC9E62513333E003EC685 /* UIView+Frame.m in Sources */,
 				0828DFE1237D255600082CAA /* UiPickerViewController.m in Sources */,
 				081D37BB24F4AD8100D8A4C1 /* UIImage+Image.m in Sources */,
+				087E9FEF256FAD050027DE8B /* YCSinglePictureVC.m in Sources */,
 				08E65CC124D94F8A00554B5A /* YCCar.m in Sources */,
 				082B51C9250C753C00AF7E0A /* YCLuckyVC.m in Sources */,
 				08F7662225418DB6004CBE13 /* YCHomeTVC.m in Sources */,
@@ -2600,6 +2645,7 @@
 				08D3EDB624E8F2CF00A560A5 /* YCTestVC.m in Sources */,
 				08F7661325416417004CBE13 /* NSDictionary+Property.m in Sources */,
 				0843A13F23750CAD0098B55C /* UIViewViewController.m in Sources */,
+				087E9FF5256FB2870027DE8B /* YCMultiplePictureVC.m in Sources */,
 				080DE9C32546D054005771B4 /* YCNeteaseNews2.m in Sources */,
 				084A2DA624DB9B540058434E /* MJPropertyKey.m in Sources */,
 				0823829724FE271400BB89A1 /* YCDrawLineVC.m in Sources */,

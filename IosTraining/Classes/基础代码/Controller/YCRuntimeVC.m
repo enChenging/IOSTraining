@@ -10,7 +10,6 @@
 #import "Person.h"
 #import <objc/message.h>
 #import "NSObject+Property.h"
-#import "NSDictionary+Property.h"
 #import "YCStatusItem.h"
 #import "NSObject+Model.h"
 /*
@@ -69,17 +68,17 @@
  */
 -(void)test{
     // TODO:讲解下什么时候runtime,
-    //    Person *p = [Person alloc];
-    Person *p = objc_msgSend(objc_getClass("Person"), sel_registerName("alloc"));
-    //    p = [p init];
-    
-    p = objc_msgSend(p, sel_registerName("init"));
-    
-    // 调用eat
-    [p eat];
-    
-    objc_msgSend(p, @selector(eat));
-    //    objc_msgSend(p, @selector(run:),20);
+//    //    Person *p = [Person alloc];
+//    Person *p = objc_msgSend(objc_getClass("Person"), sel_registerName("alloc"));
+//    //    p = [p init];
+//
+//    p = objc_msgSend(p, sel_registerName("init"));
+//
+//    // 调用eat
+//    [p eat];
+//
+//    objc_msgSend(p, @selector(eat));
+//    //    objc_msgSend(p, @selector(run:),20);
     
     // 面试:
     // 方法调用流程
@@ -89,11 +88,11 @@
     // 3.根据方法编号去查找对应方法
     // 4.找到只是最终函数实现地址,根据地址去方法区调用对应函数
     
-    //    id objc = [NSObject alloc];
-    id objc = objc_msgSend([NSObject class], @selector(alloc));
-    
-    //    objc = [objc init];
-    objc = objc_msgSend(objc, @selector(init));
+//    //    id objc = [NSObject alloc];
+//    id objc = objc_msgSend([NSObject class], @selector(alloc));
+//
+//    //    objc = [objc init];
+//    objc = objc_msgSend(objc, @selector(init));
 }
 
 #pragma mark----------交换方法--------------

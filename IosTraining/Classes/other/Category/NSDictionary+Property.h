@@ -1,21 +1,21 @@
+////
+////  NSDictionary+Property.h
+////  IosTraining
+////
+////  Created by release on 2020/10/22.
+////  Copyright © 2020 Mr. release. All rights reserved.
+////
 //
-//  NSDictionary+Property.h
-//  IosTraining
+//#import <Foundation/Foundation.h>
 //
-//  Created by release on 2020/10/22.
-//  Copyright © 2020 Mr. release. All rights reserved.
+//NS_ASSUME_NONNULL_BEGIN
 //
-
-#import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface NSDictionary (Property)
-
-
--(void)createPropertyCode;
-
-
-@end
-
-NS_ASSUME_NONNULL_END
+//@interface NSDictionary (Property)
+//
+//
+//-(void)createPropertyCode;
+//
+//
+//@end
+//
+//NS_ASSUME_NONNULL_END

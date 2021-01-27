@@ -85,6 +85,7 @@
     //    if (flag) {
     //        YCLog(@"写入成功");
     //    }
+    YCLog(@"=== %@",self.ceshiArray);
     [self initView];
 }
 

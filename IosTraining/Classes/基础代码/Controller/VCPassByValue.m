@@ -54,7 +54,6 @@ static VCPassByValue* instance = nil;
     return instance;
 }
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initTitle];

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -198,6 +198,9 @@
 		0870A37C24B7F79C0077C89E /* UIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0870A37B24B7F79C0077C89E /* UIImageViewController.m */; };
 		0870A3A624B85C920077C89E /* homeUI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0870A3A524B85C920077C89E /* homeUI.plist */; };
 		0870A3A824B85D840077C89E /* useUI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0870A3A724B85D840077C89E /* useUI.plist */; };
+		087842582570E3DD00C90665 /* YCTopicListVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 087842572570E3DD00C90665 /* YCTopicListVCViewController.m */; };
+		0878425C2570E5CA00C90665 /* YCTopicListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0878425A2570E5CA00C90665 /* YCTopicListCell.m */; };
+		0878425D2570E5CA00C90665 /* YCTopicListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0878425B2570E5CA00C90665 /* YCTopicListCell.xib */; };
 		087A9531238241D20070CBAD /* VCNSThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 087A9530238241D20070CBAD /* VCNSThread.m */; };
 		087A9534238269B20070CBAD /* VCNSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 087A9533238269B20070CBAD /* VCNSOperation.m */; };
 		087A95372382736D0070CBAD /* VCAFNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 087A95362382736D0070CBAD /* VCAFNetwork.m */; };
@@ -697,6 +700,11 @@
 		0870A37B24B7F79C0077C89E /* UIImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewController.m; sourceTree = "<group>"; };
 		0870A3A524B85C920077C89E /* homeUI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = homeUI.plist; sourceTree = "<group>"; };
 		0870A3A724B85D840077C89E /* useUI.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = useUI.plist; sourceTree = "<group>"; };
+		087842562570E3DD00C90665 /* YCTopicListVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCTopicListVCViewController.h; sourceTree = "<group>"; };
+		087842572570E3DD00C90665 /* YCTopicListVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCTopicListVCViewController.m; sourceTree = "<group>"; };
+		087842592570E5CA00C90665 /* YCTopicListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCTopicListCell.h; sourceTree = "<group>"; };
+		0878425A2570E5CA00C90665 /* YCTopicListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCTopicListCell.m; sourceTree = "<group>"; };
+		0878425B2570E5CA00C90665 /* YCTopicListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YCTopicListCell.xib; sourceTree = "<group>"; };
 		087A952F238241D20070CBAD /* VCNSThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCNSThread.h; sourceTree = "<group>"; };
 		087A9530238241D20070CBAD /* VCNSThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCNSThread.m; sourceTree = "<group>"; };
 		087A9532238269B20070CBAD /* VCNSOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCNSOperation.h; sourceTree = "<group>"; };
@@ -816,6 +824,7 @@
 		08A34B6125357AFC002F1C0E /* YCDownloadFileResumeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YCDownloadFileResumeVC.xib; sourceTree = "<group>"; };
 		08A34B6425358A51002F1C0E /* YCUploadSessionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCUploadSessionVC.h; sourceTree = "<group>"; };
 		08A34B6525358A51002F1C0E /* YCUploadSessionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCUploadSessionVC.m; sourceTree = "<group>"; };
+		08A4D4882571D8B50044EC97 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		08AEFBD123861E23000E6CE9 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		08AEFBD223861E23000E6CE9 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		08AEFBD423862036000E6CE9 /* NavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
@@ -1127,6 +1136,7 @@
 				08C863CF251F17A300E20BA4 /* 多图下载综合案例 */,
 				08F7661E25418D45004CBE13 /* 父子控制器 */,
 				084CD4222542DAE000100580 /* 网易新闻 */,
+				087842552570E34A00C90665 /* collectionView循环利用tableView */,
 				084513AF2547B80C00B5DAE4 /* 自定义流水布局 */,
 				087E9FEC256FACC20027DE8B /* 相片的选择 */,
 			);
@@ -1415,6 +1425,18 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		087842552570E34A00C90665 /* collectionView循环利用tableView */ = {
+			isa = PBXGroup;
+			children = (
+				087842562570E3DD00C90665 /* YCTopicListVCViewController.h */,
+				087842572570E3DD00C90665 /* YCTopicListVCViewController.m */,
+				087842592570E5CA00C90665 /* YCTopicListCell.h */,
+				0878425A2570E5CA00C90665 /* YCTopicListCell.m */,
+				0878425B2570E5CA00C90665 /* YCTopicListCell.xib */,
+			);
+			path = "collectionView循环利用tableView";
 			sourceTree = "<group>";
 		};
 		087E9FEC256FACC20027DE8B /* 相片的选择 */ = {
@@ -2183,6 +2205,7 @@
 		7EA412ED0534C5F917EFE155 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				08A4D4882571D8B50044EC97 /* Photos.framework */,
 				080DDFEF253459ED00C61638 /* Security.framework */,
 				080DDFED253459BE00C61638 /* libiconv.tbd */,
 				080DDFEB2534590400C61638 /* libz.tbd */,
@@ -2285,6 +2308,7 @@
 				085CC9EF25133566003EC685 /* YCMineVC.xib in Resources */,
 				0881AC0124E4D2A600133B59 /* hanguo.gif in Resources */,
 				087EC5382500D34400C841F9 /* YCDrawingBoardVC.xib in Resources */,
+				0878425D2570E5CA00C90665 /* YCTopicListCell.xib in Resources */,
 				088A8A13237FC3BF007EF77E /* data.json in Resources */,
 				08013D2D2511ECF1006A5B42 /* YCUserInfoVC.storyboard in Resources */,
 				081CD0C124E8BC95006B4D9D /* demoList.plist in Resources */,
@@ -2497,6 +2521,7 @@
 				081DDFD5250F4C240096E064 /* YCWheelBtn.m in Sources */,
 				084513B22547B84E00B5DAE4 /* YCCoustomCollectionVC.m in Sources */,
 				084CD4212542D3E000100580 /* YCHome3VC.m in Sources */,
+				087842582570E3DD00C90665 /* YCTopicListVCViewController.m in Sources */,
 				082FC73D24B96D6800EA6617 /* YCHeartView.m in Sources */,
 				082382AD24FE431F00BB89A1 /* YCPieVC.m in Sources */,
 				087EC5372500D34400C841F9 /* YCDrawingBoardVC.m in Sources */,
@@ -2576,6 +2601,7 @@
 				08D3ED9F24E8CCCC00A560A5 /* MBProgressHUD+XMG.m in Sources */,
 				08C863C4251EEA4D00E20BA4 /* YCSingleTool.m in Sources */,
 				08D3EDB324E8EE0A00A560A5 /* YCEditContactVC.m in Sources */,
+				0878425C2570E5CA00C90665 /* YCTopicListCell.m in Sources */,
 				08B18C9524DBD62A00E7336E /* YCTgXib2Cell.m in Sources */,
 				0831628A2514B2AA004736FA /* YCGuideVC.m in Sources */,
 				080DE9B72546BDB7005771B4 /* YCScoietyVC.m in Sources */,
@@ -2726,7 +2752,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2780,7 +2806,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -2794,9 +2820,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = CJA9PR9HVR;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXQB7VG3T6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = IosTraining/Classes/other/IosTraining.pch;
 				HEADER_SEARCH_PATHS = (
@@ -2829,9 +2855,9 @@
 					"\"SystemConfiguration\"",
 					"-lxml2",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.testTongyong.ctrl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.release.IosTraining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = tongyongceshiDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
@@ -2843,9 +2869,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = CJA9PR9HVR;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXQB7VG3T6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = IosTraining/Classes/other/IosTraining.pch;
 				HEADER_SEARCH_PATHS = (
@@ -2878,9 +2904,9 @@
 					"\"SystemConfiguration\"",
 					"-lxml2",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.testTongyong.ctrl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.release.IosTraining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = tongyongceshiDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};

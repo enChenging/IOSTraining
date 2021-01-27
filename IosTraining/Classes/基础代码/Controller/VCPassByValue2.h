@@ -26,7 +26,7 @@ typedef void(^VCPassByValueBlock)(NSString* str);
 
 @property(nonatomic,strong)NSString* methodValue;
 //代理反向传值
-@property(nonatomic,strong)id<VCPassByValue2Delegate>pbv2delegate;
+@property(nonatomic,strong)id<VCPassByValue2Delegate> pbv2delegate;
 //block属性反向传值
 @property(nonatomic,copy)ReceiveValueBlock receiveValue;
 //block方法反向传值

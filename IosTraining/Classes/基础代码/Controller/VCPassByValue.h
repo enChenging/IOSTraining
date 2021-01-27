@@ -15,9 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 //定义一个协议函数
 -(void)sendTextContent:(NSString*)content;
 
-//block正向传值
-typedef void (^Block)(NSString *value);
-
 @end
 
 @interface VCPassByValue : UIViewController
@@ -31,8 +28,7 @@ typedef void (^Block)(NSString *value);
 @property(nonatomic,strong)UILabel* mlabel03;
 
 @property(nonatomic,copy)NSString* mName;
-//block正向传值
-@property(nonatomic,copy)Block valueBlock;
+
 /**
  ①instancetype可以返回和方法所在类相同类型的对象，id只能返回未知类型的对象
  ②instancetype只能作为返回值，不能像id那样作为参数

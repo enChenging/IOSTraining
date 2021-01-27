@@ -22,6 +22,7 @@
 #import "YCCoustomCollectionVC.h"
 #import "YCSinglePictureVC.h"
 #import "YCMultiplePictureVC.h"
+#import "YCTopicListVCViewController.h"
 
 
 @interface DemosViewController ()
@@ -117,6 +118,9 @@ typedef void (^CaseBlock)(void);
         },
         @"网易新闻":^(){
             [self pushVC:[[YCNeteaseNews2 alloc]init] withTitile:title];
+        },
+        @"collectionView循环利用tableView":^(){
+            [self pushVC:[[YCTopicListVCViewController alloc]init] withTitile:title];
         },
         @"自定义流水布局":^(){
             [self pushVC:[[YCCoustomCollectionVC alloc]init] withTitile:title];
